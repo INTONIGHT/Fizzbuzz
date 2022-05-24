@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Hello welcome to my sample fizzbuzz program!</h1>
+<p>Please type in a number for a loop for fizzbuzz</p>
+<p>Then click the button to run it</p>
+<input type ="number"id="userChoice">
+<button onclick="fizzbuzz()">Click Me</button>
+</body>
+<script>
+    
+function fizzbuzz(){
+    var usernum = document.getElementById("userChoice").value;
+    
+    for(let i = 0; i<usernum;i++){
+        if(i % 5 == 0 && i %3 == 0){
+            //change to output
+            console.log("FizzBuzz " + i);
+        }
+        else if(i % 5 == 0){
+            console.log("Fizz " + i);
+        }
+        else if(i % 3 == 0){
+            console.log("Buzz "+ i);
+        }
+        else{
+            console.log(i);
+        }
+    }
+}
+
+</script>
+</html>
